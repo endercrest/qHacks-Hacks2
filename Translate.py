@@ -214,6 +214,8 @@ class translate():
 
 
     def parseExpression(rest):
+        global restList
+        restList = []
         temp = []
         countQ = 0
         digitFlag = 0
