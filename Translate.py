@@ -5,8 +5,7 @@ class translate():
     global restList
     restList = [] 
     def getRestList(self):
-        cpList = restList.copy.deepcopy
-        return cpList
+        return restList
     
     def mapE(lom):
         sentence = []
