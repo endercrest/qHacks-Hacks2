@@ -66,7 +66,7 @@ class Form(Frame):
                             continue
                         elif c is not '' and c is not ' ':
                             word += c
-                    if word is not '' or word is not ' ':
+                    if word is not '' and word is not ' ':
                         lis.append(word)
                         word = ''
                 self.master.userOutput.updateSoln(lis)
