@@ -15,4 +15,4 @@ This will open the UI for the app.
 UI
 ---
 
-[![47d23a9118369b31c3bbb2bdbff14848.png](https://s30.postimg.org/5uwt3d0pd/47d23a9118369b31c3bbb2bdbff14848.png)](https://postimg.org/image/5i5ex6ifh/)
+[![2c918e2cb58cd93630b585fdf1f47512.png](https://s29.postimg.org/kurqr93xz/2c918e2cb58cd93630b585fdf1f47512.png)](https://postimg.org/image/5m1tdha9f/)
