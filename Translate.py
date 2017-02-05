@@ -16,10 +16,7 @@ class translate():
             elif lom[i]['Type'] == 'ass':
                 sentence.append(" is assigned to ")
             elif lom[i]['Type'] == 'float':
-                if ((i<len(lom)-1) and ((lom[i+1]['Type'] == 'op'))) or ((i>0) and ((lom[i-1]['Type'] == 'op') or (lom[i-1]['Type'] == 'function' or (lom[i-1]['Type'] == 'cmp')))):
-                    sentence.append("the number " + lom[i]['Value'])
-                else:
-                    sentence.append("the string " + lom[i]['Value'])
+                sentence.append("the number " + lom[i]['Value'])
             elif lom[i]['Type'] == 'string':
                 sentence.append("the string " + lom[i]['Value'])
             elif lom[i]['Type'] == 'var':
@@ -191,7 +188,9 @@ class translate():
 
     LOOPNAMES = {"for":" a for loop where ",
                  "in":" in the ",
-                 "while": " a while loop where "}
+                 "while": " a while loop where ",
+                 "if": " if ",
+                 "elif": " else if "}
 
     def loops(loopName):
         if loopName in translate.LOOPNAMES:
