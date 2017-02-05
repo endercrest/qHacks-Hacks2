@@ -59,14 +59,18 @@ class Form(Frame):
                 flag = False
                 for i in out:
                     for c in i:
+                        if c.isdigit() == True:
+                            flag = True
+                            continue
                         if c == ')':
                             continue
                         elif c == '"' or c == "'":
-                            flag = True
                             continue
                         elif c is not '' and c is not ' ':
                             word += c
-                    if word is not '' or word is not ' ':
+                    if flag == True:
+                        word += ''.join(i)
+                    if word is not '' and word is not ' ' and word is not ')':
                         lis.append(word)
                         word = ''
                 self.master.userOutput.updateSoln(lis)
