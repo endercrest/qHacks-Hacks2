@@ -1,10 +1,12 @@
 import re
+import copy
 
 class translate():
     global restList
-    restList = [] #CHANGE
+    restList = [] 
     def getRestList(self):
-        return restList
+        cpList = restList.copy.deepcopy
+        return cpList
     
     def mapE(lom):
         sentence = []
